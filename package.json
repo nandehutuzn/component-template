@@ -14,8 +14,9 @@
     "build-storybook": "build-storybook",
     "clean": "lerna clean",
     "del": "yarn workspace run del",
-    "build:prod": "cross-env NODE_ENV=production && lerna clean && workspace run del && rollup -c",
-    "build:dev": "cross-env NODE_ENV=development && lerna clean && workspace run del && rollup -c"
+    "build:prod": "cross-env NODE_ENV=production rollup -c",
+    "build:dev": "cross-env NODE_ENV=development rollup -c",
+    "lerna": "lerna publish"
   },
   "dependencies": {
     "vue": "^2.6.12"
